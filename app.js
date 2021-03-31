@@ -1,9 +1,8 @@
-import express from 'express';
-import morgan from 'morgan';
-import cors from 'cors';
-import Config from './config/enviroments';
-// import indexRoute from './src/routes/indexRoute.js';
-import routes from './src/routes/routes';
+import express from 'express'; // exporess module
+import morgan from 'morgan'; // show https request
+import cors from 'cors'; // cross  data allowed
+import Config from './config/enviroments'; // config for each enviroment
+import routes from './src/routes/routes'; // routes for my app
 
 /** config to use in development or production
   * @type {Object}
