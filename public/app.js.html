@@ -1,0 +1,127 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Source: app.js | Source: app.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-jsdoc.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/tui-doc.css">
+
+    
+</head>
+<body>
+<nav class="lnb" id="lnb">
+    <div class="logo" style="">
+        
+            <img src="img/toast-ui.png" width="100%" height="100%">
+        
+    </div>
+    <div class="title">
+        <h1><a href="index.html" class="link">Source: app.js</a></h1>
+        
+    </div>
+    <div class="search-container" id="search-container">
+        <input type="text" placeholder="Search">
+        <ul></ul>
+    </div>
+    
+    <div class="lnb-api hidden"><h3>Global</h3><ul><li><a href="global.html#app">app</a></li><li><a href="global.html#cfg">cfg</a></li></ul></div>
+</nav>
+<div id="resizer"></div>
+
+<div class="main" id="main">
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import express from 'express';
+import morgan from 'morgan';
+import cors from 'cors';
+import Config from './config/enviroments.js';
+
+/** config to use in development or production
+  * @type {Object}
+  */
+const cfg = new Config();
+
+/** Express initialization module
+  * @type {Object}
+ */
+const app = express();
+
+/* middlewares */
+app.use(morgan('combined')); // chekc extra data request
+app.use(express.json()); // to use json in my app
+app.use(express.urlencoded({ extended: false })); // undertand data from others forms
+app.use(cors()); // allow share
+
+/* the main routes */
+app.get('/', (req, res) => {
+  res.send('esta aplicaicon ya funciona');
+});
+var qw = 2;
+var qw = 1;
+
+/* case route no exist */
+app.all('*', (req, res) => {
+  res.send('esta contenido con sirve para nada');
+});
+
+/* run server */
+app.listen(cfg.cfgServer.port, (err) => {
+  if (err) {
+    console.log(`error-${err}`);
+  } else {
+    console.log('RUNNING===========');
+    console.log('==================');
+    console.log(process.env.npm_package_name);
+    console.log('==================');
+    console.log('ON================');
+    console.log('==================');
+    console.log(`${cfg.cfgServer.url}==`);
+    console.log(`${cfg.cfgServer.host}=========`);
+    console.log(`${cfg.cfgServer.port}==============`);
+  }
+});
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<footer>
+    <img class="logo" src="img/toast-ui.png" style="">
+    <div class="footer-text">NHN Entertainment. Frontend Development Lab</div>
+</footer>
+<script>prettyPrint();</script>
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/tui-doc.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+    <script>
+        var id = '_sub'.replace(/"/g, '_');
+        var selectedApi = document.getElementById(id); // do not use jquery selector
+        var $selectedApi = $(selectedApi);
+
+        $selectedApi.removeClass('hidden');
+        $selectedApi.parent().find('.glyphicon').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+        showLnbApi();
+    </script>
+
+</body>
+</html>

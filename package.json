@@ -1,0 +1,29 @@
+{
+  "type": "module",
+  "name": "-example_API-NodeJS-passportjs-sqlite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "doc": "npx jsdoc -c ./jsdocs.json",
+    "dev": "nodemon ./app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsdoc": "^3.6.6",
+    "jsdoc-api-plugin": "^0.1.1",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "tui-jsdoc-template": "^1.2.2"
+  }
+}

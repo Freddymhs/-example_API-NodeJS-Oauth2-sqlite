@@ -1,0 +1,22 @@
+{
+  "plugins": [
+    "jsdoc-api-plugin"
+  ],
+  "source": {
+    "include": [
+      "./app.js",
+      "src"
+    ],
+    "includePatern": ".js$",
+    "excludePatern": "(node_modules | docs)"
+  },
+  "template": {
+    "cleverLinks": false,
+    "monospaceLinks": false
+  },
+  "opts": {
+    "template": "node_modules/tui-jsdoc-template",
+    "recurse": "true",
+    "destination": "./public"
+  }
+}
