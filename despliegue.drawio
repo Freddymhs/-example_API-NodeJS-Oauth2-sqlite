@@ -1,0 +1,55 @@
+<mxfile>
+    <diagram id="j8jkCs3LzQrO0PYmiRq9" name="Page-1">
+        <mxGraphModel dx="1122" dy="323" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="6" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="20" y="260" width="510" height="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="6" vertex="1">
+                    <mxGeometry width="510" height="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="BACKEND api" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="6" vertex="1">
+                    <mxGeometry x="20" y="15.238095238095237" width="40" height="30.476190476190474" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="sqlite" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="6" vertex="1">
+                    <mxGeometry x="40" y="230" width="60" height="79.52" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="6" vertex="1">
+                    <mxGeometry y="45.71" width="510" height="34.29" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="/user/myprofile" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="6" vertex="1">
+                    <mxGeometry x="330" y="50" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="/user/newprofile" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="6" vertex="1">
+                    <mxGeometry x="205" y="50" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="/login/google" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="6" vertex="1">
+                    <mxGeometry x="90" y="50" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="6" vertex="1">
+                    <mxGeometry y="80" width="510" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="6" vertex="1">
+                    <mxGeometry y="140" width="510" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="front" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="690" y="20" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="&lt;h1&gt;mi objetivo :]&lt;/h1&gt;&lt;p&gt;Realizar un api backend con el&amp;nbsp; login de google para almacenar sus datos de usuario en la base de datos.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;la app incia en la ruta&amp;nbsp; &amp;nbsp;/&amp;nbsp; -&amp;gt; datos json welcome a la aplicacion&amp;nbsp; &amp;nbsp;[inecesario]&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;la app permite logearse con /google&amp;nbsp; que redirecciona a crearse un nuevo perfil&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;la app permite guardar datos de usuario con /newprofile , siempre aparecear si no hemos completado nuestro perfil&lt;/p&gt;&lt;p&gt;la app permite revisar sus datos de usuario con /myprofile&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;todas las rutas estaran protegidas para que no se ingrese si no se esta logeado&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="840" y="130" width="720" height="400" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="routes" style="text;html=1;strokeColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="317" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="controller" style="text;html=1;strokeColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="545" y="360" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="model" style="text;html=1;strokeColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="420" width="40" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

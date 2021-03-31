@@ -8,8 +8,11 @@ express
 morgan
 cors
 nodemon
-eslint
+eslint   eslint-plugin-import
 jsdocs   jsdoc-api-plugin tui-jsdoc-template
+sequelize sequelize-cli
+sqlite3
+
 
 passport
 passport-google-oauth20
