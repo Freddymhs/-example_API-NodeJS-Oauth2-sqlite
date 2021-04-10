@@ -15,7 +15,7 @@ sqlite3
 
 passport
 passport-google-oauth20
-
+express-session
 
 # mi proyecto en google
 <pre>
@@ -34,6 +34,20 @@ OAuth tiene un límite de 100 registros de alcance confidencial
 debe ser accesible solo para los que esten logeados
 
 
+1- crear MIDDLEWARE/proteccion check is logged or not
+```
+export function isLogged(req, res, next) { // revisa
+  req.user ? next() : res.sendStatus(401); // revisa google trae usuario
+}
+```
 
+2- usar sessions , npm i express-session
+- key , inicializa , inicializa session 
+```
+app.use(session({ secret: 'boby' })); // set my session key
+app.use(passport.initialize()); // session start
+app.use(passport.session()); // session for passport
+```
+ 
 
 

@@ -10,11 +10,13 @@ function login() {
 function callback() {
   return (
     passport.authenticate('google', {
-      successRedirect: '/',
-      failureRedirect: '/auth/login',
+      successRedirect: '/auth/logrado',
+      failureRedirect: '/auth/fallo',
     })
   );
 }
 
-const google = { login, callback };
+const google = {
+  login, callback,
+};
 export default google;
