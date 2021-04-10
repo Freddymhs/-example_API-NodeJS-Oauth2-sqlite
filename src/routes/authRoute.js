@@ -9,7 +9,7 @@ authRoute.get('/google/callback', options.google.callback());
 
 authRoute.get('/logout', isLogged, (req, res) => {
   req.logout();
-  // req.session.destroy();
+  req.session.destroy();
   res.send('Goodbye');
 });
 // operations for facebook

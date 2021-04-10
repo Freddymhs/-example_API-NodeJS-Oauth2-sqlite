@@ -31,10 +31,6 @@ OAuth tiene un límite de 100 registros de alcance confidencial
     - JeXyXdaX6Ur3465GyOSySZeB
 
 
-# objetivo general
-un usuario administrador puede crear mas usuarios y debe asignarles roles a cada uno de los nuevos usuarios
-un usuario puede registrarse pero nunca cambiarse su rol ya que debe hacer un administrador
-siempre debe existir un usuario administrador registrado
 
 
 
