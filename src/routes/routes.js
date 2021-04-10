@@ -1,6 +1,6 @@
-import loginRoute from './loginRoute';
-import userRoute from './userRoute';
+import authRoute from './authRoute'; // login y registers
+import userRoute from './userRoute'; // crud option to api rest
 
-const routes = { loginRoute, userRoute };
+const routes = { authRoute, userRoute };
 
 export default routes;

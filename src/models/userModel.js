@@ -1,6 +1,5 @@
 import Sequelize from 'sequelize';
 import db from '../libs/db';
-import models from './models';
 
 /* create model */
 const modelUser = db.define('modelUser', {

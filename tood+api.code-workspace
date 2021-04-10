@@ -5,6 +5,12 @@
 		},
 		{
 			"path": "."
+		},
+		{
+			"path": "../apps/development/Proyecto-FmarcosDevBlogCV"
+		},
+		{
+			"path": "../example"
 		}
 	],
 	"settings": {}
