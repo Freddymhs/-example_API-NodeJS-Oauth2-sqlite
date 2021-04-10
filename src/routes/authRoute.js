@@ -7,15 +7,9 @@ const authRoute = new express.Router();
 authRoute.get('/google', options.google.login());
 authRoute.get('/google/callback', options.google.callback());
 
-authRoute.get('/logrado', isLogged, (req, res) => {
-  res.send('buena');
-});
-authRoute.get('/fallo', (req, res) => {
-  res.send('mala');
-});
-
-authRoute.get('/logout', (req, res) => {
-  req.logout(); // que hace?
+authRoute.get('/logout', isLogged, (req, res) => {
+  req.logout();
+  // req.session.destroy();
   res.send('Goodbye');
 });
 // operations for facebook

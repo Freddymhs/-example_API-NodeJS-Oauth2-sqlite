@@ -10,8 +10,8 @@ function login() {
 function callback() {
   return (
     passport.authenticate('google', {
-      successRedirect: '/auth/logrado',
-      failureRedirect: '/auth/fallo',
+      successRedirect: '/user/newprofile',
+      failureRedirect: '/auth/google',
     })
   );
 }
