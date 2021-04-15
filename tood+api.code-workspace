@@ -1,13 +1,16 @@
 {
 	"folders": [
 		{
-			"path": "../apps/development/Todoit"
-		},
-		{
 			"path": "."
 		},
 		{
 			"path": "../apps/development/Proyecto-FmarcosDevBlogCV"
+		},
+		{
+			"path": "../apps/development/Proyecto-Todoit"
+		},
+		{
+			"path": "../-example_MVC-NodeJS-Oauth2-sqlite"
 		}
 	],
 	"settings": {}
